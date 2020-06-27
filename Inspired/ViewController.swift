@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Inspired
 //
-//  Created by Naveen Budda on 6/27/20.
+//  Created by Navadeep Budda on 6/27/20.
 //  Copyright © 2020 Navadeep Budda. All rights reserved.
 //
 
@@ -17,4 +17,5 @@ class ViewController: UIViewController {
 
 
 }
+
 

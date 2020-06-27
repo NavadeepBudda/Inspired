@@ -15,6 +15,12 @@
 		420869CB24A7701B00205FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420869C924A7701B00205FFE /* LaunchScreen.storyboard */; };
 		420869D624A7701B00205FFE /* InspiredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420869D524A7701B00205FFE /* InspiredTests.swift */; };
 		420869E124A7701B00205FFE /* InspiredUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420869E024A7701B00205FFE /* InspiredUITests.swift */; };
+		420869F524A77EA200205FFE /* BoredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420869F424A77EA200205FFE /* BoredViewController.swift */; };
+		420869F824A7870E00205FFE /* boredMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 420869F724A7870E00205FFE /* boredMusic.mp3 */; };
+		420869FA24A7A0B700205FFE /* StressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420869F924A7A0B700205FFE /* StressViewController.swift */; };
+		420869FC24A7ABFD00205FFE /* stressMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 420869FB24A7ABFD00205FFE /* stressMusic.mp3 */; };
+		420869FE24A7AFF800205FFE /* AnxietyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420869FD24A7AFF800205FFE /* AnxietyViewController.swift */; };
+		42E85AF224A7F38300924B5F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E85AF124A7F38300924B5F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		420869DC24A7701B00205FFE /* InspiredUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspiredUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		420869E024A7701B00205FFE /* InspiredUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspiredUITests.swift; sourceTree = "<group>"; };
 		420869E224A7701B00205FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420869F424A77EA200205FFE /* BoredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredViewController.swift; sourceTree = "<group>"; };
+		420869F724A7870E00205FFE /* boredMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boredMusic.mp3; sourceTree = "<group>"; };
+		420869F924A7A0B700205FFE /* StressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressViewController.swift; sourceTree = "<group>"; };
+		420869FB24A7ABFD00205FFE /* stressMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stressMusic.mp3; sourceTree = "<group>"; };
+		420869FD24A7AFF800205FFE /* AnxietyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyViewController.swift; sourceTree = "<group>"; };
+		42E85AF124A7F38300924B5F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E85AF224A7F38300924B5F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 				420869D424A7701B00205FFE /* InspiredTests */,
 				420869DF24A7701B00205FFE /* InspiredUITests */,
 				420869BC24A7701400205FFE /* Products */,
+				42E85AF024A7F38300924B5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +117,11 @@
 				420869C024A7701400205FFE /* SceneDelegate.swift */,
 				420869C224A7701400205FFE /* ViewController.swift */,
 				420869C424A7701400205FFE /* Main.storyboard */,
+				420869FD24A7AFF800205FFE /* AnxietyViewController.swift */,
+				420869F924A7A0B700205FFE /* StressViewController.swift */,
+				420869F424A77EA200205FFE /* BoredViewController.swift */,
 				420869C724A7701B00205FFE /* Assets.xcassets */,
+				420869F624A786F500205FFE /* Music */,
 				420869C924A7701B00205FFE /* LaunchScreen.storyboard */,
 				420869CC24A7701B00205FFE /* Info.plist */,
 			);
@@ -126,6 +144,23 @@
 				420869E224A7701B00205FFE /* Info.plist */,
 			);
 			path = InspiredUITests;
+			sourceTree = "<group>";
+		};
+		420869F624A786F500205FFE /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				420869FB24A7ABFD00205FFE /* stressMusic.mp3 */,
+				420869F724A7870E00205FFE /* boredMusic.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		42E85AF024A7F38300924B5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42E85AF124A7F38300924B5F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				420869CB24A7701B00205FFE /* LaunchScreen.storyboard in Resources */,
+				420869FC24A7ABFD00205FFE /* stressMusic.mp3 in Resources */,
+				420869F824A7870E00205FFE /* boredMusic.mp3 in Resources */,
 				420869C824A7701B00205FFE /* Assets.xcassets in Resources */,
 				420869C624A7701400205FFE /* Main.storyboard in Resources */,
 			);
@@ -261,6 +298,9 @@
 			files = (
 				420869C324A7701400205FFE /* ViewController.swift in Sources */,
 				420869BF24A7701400205FFE /* AppDelegate.swift in Sources */,
+				420869F524A77EA200205FFE /* BoredViewController.swift in Sources */,
+				420869FE24A7AFF800205FFE /* AnxietyViewController.swift in Sources */,
+				420869FA24A7A0B700205FFE /* StressViewController.swift in Sources */,
 				420869C124A7701400205FFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHN35ZDJL8;
 				INFOPLIST_FILE = Inspired/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHN35ZDJL8;
 				INFOPLIST_FILE = Inspired/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
